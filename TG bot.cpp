@@ -37,7 +37,13 @@ int main(int argc, char** argv) {
         bot.getApi().sendMessage(message->chat->id, "Say me the short name of your Set for links");
         usersInfo[to_string(message->from->id)] = 1;
         objectsStickers[to_string(message->from->id)] = new StickerSetUser();
-        bot.getEvents().onNonCommandMessage([&bot](TgBot::Message::Ptr message) {
+    });
+
+    bot.getEvents().onNonCommandMessage([&bot](TgBot::Message::Ptr message) {
+        if (usersInfo.find(to_string(message->from->id)) == usersInfo.end()) {
+            bot.getApi().sendMessage(message->chat->id, "You can use /help to see all commands");
+        }
+        else {
             if (usersInfo[to_string(message->from->id)] == 4) {
                 string emoji = message->text;
                 string name = objectsStickers[to_string(message->from->id)]->getName();
@@ -47,7 +53,7 @@ int main(int argc, char** argv) {
                 try {
                     bot.getApi().createNewStickerSet(message->from->id, name, title, file, emoji);
                     bot.getApi().sendMessage(message->chat->id, " Here is your new stickerset!" u8"😁" "Click the link!\nLink - http://t.me/addstickers/" + name);
-                    usersInfo[to_string(message->from->id)] = 0;
+                    usersInfo.erase(to_string(message->from->id));
                 }
                 catch (TgBot::TgException& e) {
                     bot.getApi().sendMessage(message->chat->id, e.what());
@@ -141,15 +147,8 @@ int main(int argc, char** argv) {
                     }
                 }
             }
-            
-            
-            
-            
-        });
-
+        }
     });
-
- 
     
     try {
         printf("Bot username: %s\n", bot.getApi().getMe()->username.c_str());
