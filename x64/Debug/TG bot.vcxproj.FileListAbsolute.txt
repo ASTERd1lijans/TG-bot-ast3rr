@@ -1,0 +1,7 @@
+E:\C++ projects\TG bot\TG bot\x64\Debug\TG bot.vcxproj.CopyComplete
+E:\C++ projects\TG bot\TG bot\x64\Debug\TG bot.exe
+E:\C++ projects\TG bot\TG bot\x64\Debug\TgBot.dll
+E:\C++ projects\TG bot\TG bot\x64\Debug\libssl-3-x64.dll
+E:\C++ projects\TG bot\TG bot\x64\Debug\libcrypto-3-x64.dll
+E:\C++ projects\TG bot\TG bot\x64\Debug\libcurl-d.dll
+E:\C++ projects\TG bot\TG bot\x64\Debug\zlibd1.dll
