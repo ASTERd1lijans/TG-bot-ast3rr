@@ -150,6 +150,10 @@ int main(int argc, char** argv) {
         }
     });
     
+    bot.getEvents().onCommand("help", [&bot](TgBot::Message::Ptr message) {
+        bot.getApi().sendMessage(message->chat->id, "ASTER bot's commands:\n/newpack - creating a new sticker pack\n/add - adding the new sticker to a pack\n/delete - deleting the sticker from the pack ");
+        });
+
     try {
         printf("Bot username: %s\n", bot.getApi().getMe()->username.c_str());
         TgBot::TgLongPoll longPoll(bot);
