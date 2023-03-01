@@ -151,7 +151,11 @@ int main(int argc, char** argv) {
     });
     
     bot.getEvents().onCommand("help", [&bot](TgBot::Message::Ptr message) {
-        bot.getApi().sendMessage(message->chat->id, "ASTER bot's commands:\n/newpack - creating a new sticker pack\n/add - adding the new sticker to a pack\n/delete - deleting the sticker from the pack ");
+        bot.getApi().sendMessage(message->chat->id, "ASTER bot's commands:\n/newpack - creating a new sticker pack\n/add - adding the new sticker to a pack\n/delete - deleting the sticker from the pack\n/lang - changing the language ");
+        });
+
+    bot.getEvents().onCommand("add", [&bot](TgBot::Message::Ptr message) {
+        if(objectsStickers.find(message->from->id))//todo 
         });
 
     try {
