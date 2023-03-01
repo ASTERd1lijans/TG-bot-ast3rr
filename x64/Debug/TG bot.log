@@ -3,5 +3,5 @@
   - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
   - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
   Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
-E:\C++ projects\TG bot\TG bot\TG bot.cpp(139,39): warning C4101: e: неиспользованная локальная переменная
+E:\C++ projects\TG bot\TG bot\TG bot.cpp(113,39): warning C4101: e: неиспользованная локальная переменная
   TG bot.vcxproj -> E:\C++ projects\TG bot\TG bot\x64\Debug\TG bot.exe
