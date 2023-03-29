@@ -1,7 +1,131 @@
-﻿  TG bot.cpp
+﻿  MySQLConnection.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(64,31): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(64,25): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "SQLLEN"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(65,32): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(65,25): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "SQLULEN"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(289,11): error C3646: Data1: неизвестный спецификатор переопределения
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(289,16): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(290,10): error C3646: Data2: неизвестный спецификатор переопределения
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(290,15): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(291,10): error C3646: Data3: неизвестный спецификатор переопределения
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(291,15): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(292,10): error C3646: Data4: неизвестный спецификатор переопределения
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(292,15): error C2143: синтаксическая ошибка: отсутствие "," перед "["
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(292,20): error C2238: непредвиденные лексемы перед ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(297,33): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(297,33): error C2378: SQLULEN: переопределение; символ нельзя перегрузить typedef
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(65,25): message : см. объявление "SQLULEN"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqltypes.h(297,25): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "BOOKMARK"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(606,12): error C2061: синтаксическая ошибка: идентификатор "_Out_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(608,32): error C2065: _Out_: необъявленный идентификатор
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(608,38): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "SQLHENV"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(612,35): error C2061: синтаксическая ошибка: идентификатор "_Out_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(616,12): error C2061: синтаксическая ошибка: идентификатор "_Out_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(620,12): error C2061: синтаксическая ошибка: идентификатор "_Inout_updates_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(627,39): error C2061: синтаксическая ошибка: идентификатор "SQLULEN"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(644,12): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_bytes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(656,12): error C2061: синтаксическая ошибка: идентификатор "_In_reads_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(664,36): error C2061: синтаксическая ошибка: идентификатор "_Out_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(668,12): error C2061: синтаксическая ошибка: идентификатор "_In_reads_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(678,36): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(684,39): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(698,12): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(705,5): error C2061: синтаксическая ошибка: идентификатор "_In_reads_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(715,42): error C2061: синтаксическая ошибка: идентификатор "SQLLEN"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(731,34): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(742,5): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(750,12): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(756,12): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(760,35): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(768,12): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(776,5): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(785,34): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(791,12): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(794,11): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(794,11): error C2059: синтаксическая ошибка: return
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(801,34): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(813,12): error C2061: синтаксическая ошибка: идентификатор "_Out_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(816,12): error C2061: синтаксическая ошибка: идентификатор "_Out_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(821,5): error C2061: синтаксическая ошибка: идентификатор "_In_reads_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(826,12): error C2061: синтаксическая ошибка: идентификатор "_In_reads_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(828,32): error C2065: _In_: необъявленный идентификатор
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(828,37): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "SQLHSTMT"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(833,34): error C2061: синтаксическая ошибка: идентификатор "_In_reads_bytes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(839,33): error C2061: синтаксическая ошибка: идентификатор "SQLULEN"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(844,5): error C2061: синтаксическая ошибка: идентификатор "_In_reads_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(851,12): error C2061: синтаксическая ошибка: идентификатор "_In_reads_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(855,33): error C2061: синтаксическая ошибка: идентификатор "SQLLEN"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(861,34): error C2061: синтаксическая ошибка: идентификатор "_In_reads_bytes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(868,39): error C2061: синтаксическая ошибка: идентификатор "SQLULEN"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(874,34): error C2061: синтаксическая ошибка: идентификатор "_In_reads_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(880,33): error C2061: синтаксическая ошибка: идентификатор "SQLULEN"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(884,12): error C2061: синтаксическая ошибка: идентификатор "_In_reads_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(890,12): error C2061: синтаксическая ошибка: идентификатор "_In_reads_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sql.h(896,12): error C2061: синтаксическая ошибка: идентификатор "_In_reads_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(1791,5): error C2061: синтаксическая ошибка: идентификатор "_In_reads_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(1908,5): error C2061: синтаксическая ошибка: идентификатор "_In_reads_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(1930,5): error C2061: синтаксическая ошибка: идентификатор "SQLLEN"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(1934,5): error C2061: синтаксическая ошибка: идентификатор "_In_reads_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(1950,5): error C2061: синтаксическая ошибка: идентификатор "_Out_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(1962,5): error C2061: синтаксическая ошибка: идентификатор "SQLLEN"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(1970,5): error C2061: синтаксическая ошибка: идентификатор "_In_reads_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(1995,5): error C2061: синтаксическая ошибка: идентификатор "_In_reads_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2004,5): error C2061: синтаксическая ошибка: идентификатор "_Out_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2009,5): error C2061: синтаксическая ошибка: идентификатор "SQLULEN"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2014,5): error C2061: синтаксическая ошибка: идентификатор "_In_reads_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2026,5): error C2061: синтаксическая ошибка: идентификатор "_In_reads_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2041,5): error C2061: синтаксическая ошибка: идентификатор "_In_reads_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2061,5): error C2061: синтаксическая ошибка: идентификатор "_In_reads_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2074,5): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2091,5): error C2061: синтаксическая ошибка: идентификатор "SQLULEN"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2129,5): error C2061: синтаксическая ошибка: идентификатор "_Out_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2160,5): error C2061: синтаксическая ошибка: идентификатор "SQLLEN"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2170,5): error C2065: _In_opt_: необъявленный идентификатор
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2170,37): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "LPWSTR"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2176,28): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2176,17): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "TraceReturn"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2177,29): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2177,17): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "TraceVersion"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2195,36): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2195,17): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ODBCSetTryWaitValue"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2196,36): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2196,1): error C2086: int DWORD: переопределение
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2177,1): message : см. объявление "DWORD"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2196,17): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ODBCGetTryWaitValue"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2218,17): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2218,17): error C2143: синтаксическая ошибка: отсутствие ";" перед "*"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2218,28): error C2238: непредвиденные лексемы перед ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2219,13): error C3646: dwFlags: неизвестный спецификатор переопределения
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2219,20): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2221,17): error C2143: синтаксическая ошибка: отсутствие ";" перед "*"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2221,17): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2221,24): error C2238: непредвиденные лексемы перед ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2222,17): error C2143: синтаксическая ошибка: отсутствие ";" перед "*"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2222,17): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2222,23): error C2238: непредвиденные лексемы перед ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2225,17): error C2143: синтаксическая ошибка: отсутствие ";" перед "*"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2225,17): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2225,32): error C2238: непредвиденные лексемы перед ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2226,17): error C2143: синтаксическая ошибка: отсутствие ";" перед "*"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2226,17): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2226,31): error C2238: непредвиденные лексемы перед ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2231,33): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2231,1): error C2086: int VOID: переопределение
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2176,1): message : см. объявление "VOID"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlext.h(2231,17): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "FireVSDebugEvent"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlucode.h(49,5): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_bytes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlucode.h(76,5): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_bytes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlucode.h(88,5): error C2061: синтаксическая ошибка: идентификатор "_In_reads_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlucode.h(100,5): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlucode.h(119,5): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlucode.h(129,5): error C2061: синтаксическая ошибка: идентификатор "_In_reads_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlucode.h(137,5): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlucode.h(147,5): error C2061: синтаксическая ошибка: идентификатор "_Out_writes_opt_"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\sqlucode.h(147,21): fatal  error C1003: число ошибок превышает 100; остановка компиляции
+  TG bot.cpp
   Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
   - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
   - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
   Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
-E:\C++ projects\TG bot\TG bot\TG bot.cpp(113,39): warning C4101: e: неиспользованная локальная переменная
-  TG bot.vcxproj -> E:\C++ projects\TG bot\TG bot\x64\Debug\TG bot.exe
+E:\C++ projects\TG bot\mysql\include\mysql.h(72,10): fatal  error C1083: Не удается открыть файл включение: mysql_version.h: No such file or directory,
+  Создание кода...
