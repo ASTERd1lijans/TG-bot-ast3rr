@@ -6,7 +6,7 @@
 #include <tgbot/tgbot.h>
 #include <map>
 #include "Base64.h"
-#include <mysql.h>
+#include "MySQLConnection.h"
 
 using namespace std;
 using namespace cv;
@@ -20,15 +20,9 @@ string createImage(TgBot::Message::Ptr message, TgBot::Bot &bot);
 
 int main(int argc, char** argv) {
     TgBot::Bot bot("5860207024:AAEpaxdfaiBGFz91Ht6dtsKvE20Nz0irJ7s");
-    
-    MYSQL* conn;
-    MYSQL_RES* res;
-    MYSQL_ROW row;
-    char server[10] = "localhost";
-    char user[5] = "root";
-    char password[17] = "52899009ASTERsql";
-    char database[12] = "tg_bot_data";
-    conn = mysql_init(NULL);
+    MySQLConnection* connector = MySQLConnection::getInstance();
+
+    connector->selectUserById(1);
 
     bot.getEvents().onCommand("start", [&bot](TgBot::Message::Ptr message) {
         bot.getApi().sendMessage(message->chat->id, "Hey!");
