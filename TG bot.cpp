@@ -14,18 +14,21 @@ using namespace cv;
 map<string, short>usersNewPackPosition;
 map<string, StickerSetUser*> objectsStickers;
 map<string, short>usersAddPosition;
-
+MySQLConnection* connector;
 bool checkNamesLenght(string name);
 string createImage(TgBot::Message::Ptr message, TgBot::Bot &bot);
 
 int main(int argc, char** argv) {
     TgBot::Bot bot("5860207024:AAEpaxdfaiBGFz91Ht6dtsKvE20Nz0irJ7s");
-    MySQLConnection* connector = MySQLConnection::getInstance();
-
-    connector->selectUserById(1);
+    connector = MySQLConnection::getInstance();
 
     bot.getEvents().onCommand("start", [&bot](TgBot::Message::Ptr message) {
-        bot.getApi().sendMessage(message->chat->id, "Hey!");
+        if (!connector->checkUserById(message->from->id)) {
+            connector->createNewUser(message->from->id);
+        }
+        string textMessage = connector->translator(message->from->id, "Hey!");
+
+        bot.getApi().sendMessage(message->chat->id, textMessage);
         });
     bot.getEvents().onCommand("send", [&bot](TgBot::Message::Ptr message) {
         bot.getApi().sendMessage(449972946, "/start");
@@ -33,8 +36,8 @@ int main(int argc, char** argv) {
         });
     bot.getEvents().onCommand("newpack", [&bot](TgBot::Message::Ptr message) {
         bot.getApi().sendMessage(message->chat->id, "Say me the short name of your Set for links");
-    usersNewPackPosition[to_string(message->from->id)] = 1;
-    objectsStickers[to_string(message->from->id)] = new StickerSetUser();
+        usersNewPackPosition[to_string(message->from->id)] = 1;
+        objectsStickers[to_string(message->from->id)] = new StickerSetUser();
         });
 
     bot.getEvents().onNonCommandMessage([&bot](TgBot::Message::Ptr message) {
@@ -98,9 +101,7 @@ int main(int argc, char** argv) {
                     bot.getApi().sendMessage(message->chat->id, "Please, input the name correctly!");
                 }
                 else {
-                    /*if (stickerSetPtr != NULL) {
-                        bot.getApi().sendMessage(message->chat->id, "This name has already taken" u8"😭");
-                    }*/
+
                     bool flagUniqueSticker = false;
                     try {
                         TgBot::StickerSet::Ptr stickerSetPtr = bot.getApi().getStickerSet(name);
@@ -166,6 +167,40 @@ int main(int argc, char** argv) {
         }
         });
 
+    bot.getEvents().onCommand("lang", [&bot](TgBot::Message::Ptr message) {
+        map<int, string>langs = connector->selectAllLangs();
+        if (langs.empty()) {
+            bot.getApi().sendMessage(message->chat->id, "Sorry, some troubles with languages. Try later;)");
+        }
+        else {
+            TgBot::InlineKeyboardMarkup::Ptr keyboard(new TgBot::InlineKeyboardMarkup);
+            vector<TgBot::InlineKeyboardButton::Ptr> row;
+
+            for (map<int, string>::iterator iter = langs.begin(); iter != langs.end(); ++iter) {
+                row.clear();
+                TgBot::InlineKeyboardButton::Ptr KeyboardButton(new TgBot::InlineKeyboardButton);
+                KeyboardButton->text = iter->second;
+                KeyboardButton->callbackData = ("Language: " + to_string(iter->first));
+                row.push_back(KeyboardButton);
+                keyboard->inlineKeyboard.push_back(row);
+            }
+            bot.getApi().sendMessage(message->chat->id, "Select your language", false, 0, keyboard);
+        }
+        });
+    bot.getEvents().onCallbackQuery([&bot](const TgBot::CallbackQuery::Ptr& query) {
+        if (query->data.find("Language: ") != std::string::npos) {
+            cout << query->message->chat->id;
+            int chatId = query->message->chat->id;
+            //int userId = query->message->from->id;
+            string ans = query->data.substr(10);
+            //connector->updateLang(atoi(ans.c_str()), userId);
+            if (connector->updateLang(stoi(ans), chatId)) {
+               bot.getApi().sendMessage(chatId, "lang was changed");
+            }
+            else{ bot.getApi().sendMessage(chatId, "Some errors. Try again"); }
+            
+        }
+        });
     try {
         printf("Bot username: %s\n", bot.getApi().getMe()->username.c_str());
         TgBot::TgLongPoll longPoll(bot);
