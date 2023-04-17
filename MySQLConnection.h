@@ -6,6 +6,8 @@
 #include <iostream>
 #include <stdexcept>
 #include <string>
+#include <codecvt>
+#include <vector>
 #include <map>
 
 using namespace std;
@@ -33,6 +35,7 @@ public:
 	static MySQLConnection* getInstance();
     bool checkUserById(int id);
     bool createNewUser(int id);
+    string wstring_to_utf8(const wstring& str);
     int selectIdLang(int idUser);
     map<int, string> selectAllLangs();
     bool updateLang(int idLang, int idUser);

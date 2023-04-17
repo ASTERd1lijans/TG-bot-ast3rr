@@ -203,8 +203,9 @@ string MySQLConnection::translator(int idUser, string phrase)
                     if (SQL_SUCCEEDED(retcode)) {
                         SQLGetData(hstmt, 1, SQL_C_WCHAR, &translation, 255, &lengthTranslation);
                         wstring str(translation);
-                        str = str + L"\0";
-                        string result = string(str.begin(), str.end());
+                        //str = str + L"\0";
+                        //string result = string(str.begin(), str.end());
+                        string result = wstring_to_utf8(str);
                         return result;
                     }
                 }
@@ -221,4 +222,23 @@ string MySQLConnection::WStringToString(const wstring& wstr)
     str.resize(wstr.length());
     wcstombs_s(&size, &str[0], str.size() + 1, wstr.c_str(), wstr.size());
     return str;
+}
+
+string MySQLConnection::wstring_to_utf8(const wstring& ws)
+{
+    string str1 = u8"";
+    const std::locale locale("RU");
+    typedef std::codecvt<wchar_t, char, std::mbstate_t> converter_type;
+    const converter_type& converter = std::use_facet<converter_type>(locale);
+    std::vector<char> to(ws.length() * converter.max_length());
+    std::mbstate_t state;
+    const wchar_t* from_next;
+    char* to_next;
+    const converter_type::result result = converter.out(state, ws.data(), ws.data() + ws.length(), from_next, &to[0], &to[0] + to.size(), to_next);
+    if (result == converter_type::ok or result == converter_type::noconv) {
+        const std::string s(&to[0], to_next);
+
+        return str1.append(s);
+    }
+    return "";
 }
