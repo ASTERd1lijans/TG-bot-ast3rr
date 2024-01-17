@@ -1,3 +1,63 @@
-﻿  MySQLConnection.cpp
-E:\C++ projects\TG bot\TG bot\MySQLConnection.cpp(138): warning C4715: MySQLConnection::selectIdLang: значение возвращается не при всех путях выполнения
+﻿  BotRunner.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(69,65): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(214,48): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(215,47): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(217,61): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(225,61): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(229,48): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(236,61): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(238,52): warning C4244: аргумент: преобразование "int64_t" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=int
+          ]
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(239,48): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(246,77): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(257,65): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(262,58): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(266,52): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(269,65): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(280,65): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(297,65): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(330,65): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(334,65): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(342,65): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(353,69): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(358,69): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(363,69): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(367,52): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(376,69): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(383,69): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(384,56): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(393,77): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(408,69): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(412,56): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(416,69): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(431,58): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(442,66): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(444,67): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(447,66): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(454,62): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(459,48): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(468,65): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(476,52): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(477,65): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(489,65): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(495,65): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(502,52): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(504,65): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(518,65): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(524,65): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(534,69): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(544,69): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(545,53): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(548,56): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(539,27): warning C4101: e: неиспользованная локальная переменная
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(557,16): warning C4244: инициализация: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(573,16): warning C4244: инициализация: преобразование "int64_t" в "int", возможна потеря данных
+E:\C++ projects\TG bot\TG bot\BotRunner.cpp(638,72): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
   TG bot.vcxproj -> E:\C++ projects\TG bot\TG bot\x64\Debug\TG bot.exe

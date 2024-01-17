@@ -1,0 +1,10 @@
+﻿  Base64.cpp
+E:\C++ projects\TG bot\TG bot\Base64.cpp(10,23): warning C4018: <: несоответствие типов со знаком и без знака
+E:\C++ projects\TG bot\TG bot\Base64.cpp(14,23): warning C4101: bytes: неиспользованная локальная переменная
+E:\C++ projects\TG bot\TG bot\Base64.cpp(50,33): warning C4244: =: преобразование "std::streamoff" в "long", возможна потеря данных
+  MySQLConnection.cpp
+  StickerSetUser.cpp
+  TG bot.cpp
+E:\C++ projects\TG bot\TG bot\TG bot.cpp(2,10): fatal  error C1083: Не удается открыть файл включение: opencv2/opencv.hpp: No such file or directory,
+  Создание кода...
+E:\C++ projects\TG bot\TG bot\MySQLConnection.cpp(138): warning C4715: MySQLConnection::selectIdLang: значение возвращается не при всех путях выполнения
